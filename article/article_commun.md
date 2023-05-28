@@ -123,10 +123,6 @@ Lors du hackathon, chaque groupe était invité à récupérer (ou *fetch*) les 
 
 Le travail effectué à partir d'un miroir de l'API récupérée du projet a été l'occasion d'une connaissance approfondie mais également critique du projet. L'API incarne, dans la dimension technique du projet, une facette importante voir primordiale. Ainsi, la parcourir et l'explorer dans le cadre d'une réalisation éphémère a permis de découvrir le projet comme objet technique : d'observer comment l'idée de corpus, essentielle à la perspective de recherche, avait été techniquement implémentée au sein d'une structuration des données. En revanche, cette même exploration a amené le développement d'un regard critique sur les choix de structuration des données qui avait été fait. La réunion d'expertises et cultures diverses autour de cet objet qui concentre pour une majeure partie le travail d'édition numérique de l'Anthologie grecque a permit de souligner des failles ou tensions dans le projet (qui pour certaines avaient déjà été identifiées par les chercheurs du projet) et de questionner plus généralement les choix d'implémentation techniques. Cette perspective du travail collaboratif fait du hackathon non seulement un moment ludique et une occasion d'extension d'un projet déjà mature, mais également un espace-temps pour établir un dialogue critique avec un objet culturel.
 
----
----
----
-
 ### Archéologie des notebooks Observable (Lena)
 
 [historique des commits](https://github.com/EPgg92/2022-Hackathon-Navigations/blob/Team4/Team4/commit.csv)
@@ -186,5 +182,3 @@ svg.arc .nodes circle {
 </style>
 
 --->
-
-## Bibliographie
