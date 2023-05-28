@@ -1,8 +1,3 @@
-# Article commun - Graph ton Anthologie Grecque (GAG)
-
----
----
-
 # Le projet Graph ton Anthologie Grecque (GAG) : restitution d'une expérience de Hackathon
 
 Cet article procède pour une grande part d'un travail de restitution d'un projet collaboratif mené lors du Hackathon du colloque *Navigations anthologiques* (CRCEN 2022). Par oubli d'étapes, égarements d'archives, ou nostalgies d'un collectif, cette restitution comporte une dimension de romantisation qui ne demeure pas moins fidèle à l'expérience passée.
