@@ -9,7 +9,6 @@
 ![Présentation de Graphe ton Anthologie Grecque](https://api.nakala.fr/iiif/10.34847/nkl.8cc6mjel/f7b56db78ce543d8e7f4bae4ae710131f0534cfa/full/1500,/0/default.jpg "Présentation de Graphe ton Anthologie Grecque" =x200) Présentation de Graphe ton Anthologie Grecque
 
 #### Les membres
-<!-- suggestion: on passe toutes les photos en noir et blanc pour que ce soit plus unifié? -->
 
 ![Antoine](https://api.nakala.fr/iiif/10.34847/nkl.8cc6mjel/fbdd835961d6ead4ef5df5a7b748be409c5a7ced/full/1500,/0/default.jpg "Antoine" =x200) Antoine
 
