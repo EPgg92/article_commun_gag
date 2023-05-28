@@ -122,29 +122,3 @@ Lors du hackathon, chaque groupe était invité à récupérer (ou *fetch*) les 
 […]
 
 Le travail effectué à partir d'un miroir de l'API récupérée du projet a été l'occasion d'une connaissance approfondie mais également critique du projet. L'API incarne, dans la dimension technique du projet, une facette importante voir primordiale. Ainsi, la parcourir et l'explorer dans le cadre d'une réalisation éphémère a permis de découvrir le projet comme objet technique : d'observer comment l'idée de corpus, essentielle à la perspective de recherche, avait été techniquement implémentée au sein d'une structuration des données. En revanche, cette même exploration a amené le développement d'un regard critique sur les choix de structuration des données qui avait été fait. La réunion d'expertises et cultures diverses autour de cet objet qui concentre pour une majeure partie le travail d'édition numérique de l'Anthologie grecque a permit de souligner des failles ou tensions dans le projet (qui pour certaines avaient déjà été identifiées par les chercheurs du projet) et de questionner plus généralement les choix d'implémentation techniques. Cette perspective du travail collaboratif fait du hackathon non seulement un moment ludique et une occasion d'extension d'un projet déjà mature, mais également un espace-temps pour établir un dialogue critique avec un objet culturel.
-
-### Graphiques
-
-<iframe width="100%" height="483" frameborder="0" src="https://observablehq.com/embed/82b5ad461a19ff28?cells=chart"></iframe>
-
-> *Arc Diagram*, [Brian Staats](https://observablehq.com/@bstaats) 2018
- Adapted from Robert Gove's block from his blog post
-> An arc diagram of Les Miserables characters ordered by the first chapter they appear in. Arcs represent characters that interact with each other. This can be seen as a 1D semantic substrate.
-> Arc diagrams can be useful for examining relationships between an ordered variable, like chapters in a book, and the connections between nodes. However, because of limits in screen size, arc diagrams are often limited to graphs with a few hundred nodes at most.
-
-<!--
-ajouter les styles 
-<style>
-svg.arc .links path {
-  fill: none;
-  stroke: #999;
-  stroke-opacity: 0.6;
-}
-svg.arc .nodes circle {
-  fill: #d62333;
-  stroke: #fff;
-  stroke-width: 1px;
-}
-</style>
-
---->
