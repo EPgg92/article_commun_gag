@@ -123,40 +123,6 @@ Lors du hackathon, chaque groupe était invité à récupérer (ou *fetch*) les 
 
 Le travail effectué à partir d'un miroir de l'API récupérée du projet a été l'occasion d'une connaissance approfondie mais également critique du projet. L'API incarne, dans la dimension technique du projet, une facette importante voir primordiale. Ainsi, la parcourir et l'explorer dans le cadre d'une réalisation éphémère a permis de découvrir le projet comme objet technique : d'observer comment l'idée de corpus, essentielle à la perspective de recherche, avait été techniquement implémentée au sein d'une structuration des données. En revanche, cette même exploration a amené le développement d'un regard critique sur les choix de structuration des données qui avait été fait. La réunion d'expertises et cultures diverses autour de cet objet qui concentre pour une majeure partie le travail d'édition numérique de l'Anthologie grecque a permit de souligner des failles ou tensions dans le projet (qui pour certaines avaient déjà été identifiées par les chercheurs du projet) et de questionner plus généralement les choix d'implémentation techniques. Cette perspective du travail collaboratif fait du hackathon non seulement un moment ludique et une occasion d'extension d'un projet déjà mature, mais également un espace-temps pour établir un dialogue critique avec un objet culturel.
 
-### Archéologie des notebooks Observable (Lena)
-
-[historique des commits](https://github.com/EPgg92/2022-Hackathon-Navigations/blob/Team4/Team4/commit.csv)
-
-#### Historique des commits
-
-<https://github.com/EPgg92/2022-Hackathon-Navigations/blob/Team4/Team4/commit.csv>
-
-#### Historique des notebooks
-
-27 octobre
-
-- 12:02  création d'un notebook pour tester l'API
-- 12h à 13h: [tests](https://observablehq.com/d/7de89004c95e1067@76?collection=@lenamk/hackathon-navigations) de différents moyens de récupérer des contenus de l'API (auteurs)
-
-29 octobre
-
-- 9:16, 10:04 suite des [tests](https://observablehq.com/d/7de89004c95e1067@76?collection=@lenamk/hackathon-navigations) avec l'API, tentative de récupérer les passages
-
-hypothèses Lena:
-
-- on a fait constat de l'inefficacité à traiter les données dans le notebook et on a opté pour un traitement en python avec Enzo et Marianne
-- ça laisse du temps pour réfléchir aux visualisations, et force à se poser la question: quelles sont les données dont on a besoin, quel format, etc.
-
-- 10:28 [fork de Arc Diagram](https://observablehq.com/d/82b5ad461a19ff28@38?collection=@lenamk/hackathon-navigations)
-- 10:35 [fork de Paul's Observable Tips&Tricks](https://observablehq.com/d/a24368583ec29336@421?collection=@lenamk/hackathon-navigations)
-- 10:39 [fork du Graph STAR WARS](https://observablehq.com/d/9b6f8db3472d31ba?collection=@lenamk/hackathon-navigations)
-  - ~11h: expérimentation pour comprendre le format des données
-- 11:54 : 1er commit sur github
-
-- 1:57 fork du graph STAR WARS pour créer [Graph des livres (1)](https://observablehq.com/d/04bf8f802c358028?collection=@lenamk/hackathon-navigations)
-  - 14:04 ajout du lien vers les données produites par le groupe
-  -
-
 ### Graphiques
 
 <iframe width="100%" height="483" frameborder="0" src="https://observablehq.com/embed/82b5ad461a19ff28?cells=chart"></iframe>
