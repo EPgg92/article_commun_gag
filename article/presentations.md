@@ -26,7 +26,6 @@
 - Qui es-tu ?
 - Qu'est-ce que tu attendais hackathon?
 - Quelle est ta relation à l'anthologie ?
-- ~~Comment as-tu trouvé la nourriture ?~~
 
 #### Antoine
 
