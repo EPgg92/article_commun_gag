@@ -1,7 +1,7 @@
 
 # Plusieurs aspects à évoquer
 
-## des méthodes non conventionnels de jouer avec une API
+## des méthodes non conventionnels de jouer avec une API ✅
 
 - étrange d'un point de vue hackathon de dump la data de l'api en local : explique le "pseudo" ETL
   - Pendant le hackathon nous étions invités a *fetch* la data de l'API pour utiliser comme bon nous semble. La [documentation](https://github.com/EcrituresNumeriques/2022-Hackathon-Navigations/blob/main/DOC/README.md) nous invitait clairement a faire un dump local des epigrams (passages). Cela semble un peu contre intuitif sur la manière d'utiliser une API. Une contrainte qui aurait pu nous etre imposer aurait été de seulement d'accéder aux datas par requête. Mais apparement les organisateurs connaissaient les limitation de leur data et la flexibilité de leur API, nous proposant une alternative si l'on souhaitait faire de l'IA ou bien l'analytique et pas seulement de l'exposition ou bien forwarding.
