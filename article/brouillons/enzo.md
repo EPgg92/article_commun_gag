@@ -17,6 +17,9 @@
   - interoperabilité de AG
   - suitable data format
   - travailler *en local* vs appeler une API
+
+## détermination du projet par les profils techniques
+
 - détermination du projet par les profils techniques : choix des outils et des visualisations produites
   - on a décidé d'aller avec les spécialités de chacun
     - pourquoi?
