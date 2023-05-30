@@ -6,9 +6,11 @@
 - étrange d'un point de vue hackathon de dump la data de l'api en local : explique le "pseudo" ETL
   - Pendant le hackathon nous étions invités a *fetch* la data de l'API pour utiliser comme bon nous semble. La [documentation](https://github.com/EcrituresNumeriques/2022-Hackathon-Navigations/blob/main/DOC/README.md) nous invitait clairement a faire un dump local des epigrams (passages). Cela semble un peu contre intuitif sur la manière d'utiliser une API. Une contrainte qui aurait pu nous etre imposer aurait été de seulement d'accéder aux datas par requête. Mais apparement les organisateurs connaissaient les limitation de leur data et la flexibilité de leur API, nous proposant une alternative si l'on souhaitait faire de l'IA ou bien l'analytique et pas seulement de l'exposition ou bien forwarding.
   
-### Possibilités
+### Possibilités 👀 Margot
 
-- Margot review plz -> Nous avons envisagé de faire seulement un frontend pour render les different plots comme le montre ce [notebook observable HQ](https://observablehq.com/d/7de89004c95e1067?collection=@lenamk/hackathon-navigations); cependant le mixte technologique de notre groupe nous a fait partir sur une extraction et une tranformation en python. Nous condamnent a devoir faire des updates de cette sources of truth (mais qui ne devrait pas posé de problème sachant que lanthologie est un corpus fini).
+Nous avons envisagé de faire seulement un frontend pour render les different plots comme le montre ce [notebook observable HQ](https://observablehq.com/d/7de89004c95e1067?collection=@lenamk/hackathon-navigations); cependant le mixte technologique de notre groupe nous a fait partir sur une extraction et une tranformation en python. Nous condamnent a devoir faire des updates de cette sources of truth (mais qui ne devrait pas posé de problème sachant que lanthologie est un corpus fini).
+Cependant il serait tout a fait possible de réaliser ce nous avons fait en full python ou javascript. (dans un observable notebook with d3 ou jupyter notebook avec d3graph ou self encapsuled sans un site).
+Les décisions ont été fait  pour que tout le mode s'accommode du mixte technologique et puisse être plus à l'aise et rapide (tout en s'amusant).
 
 ## Un retour sur l'API
 
