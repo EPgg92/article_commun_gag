@@ -14,11 +14,121 @@ Les décisions ont été fait  pour que tout le mode s'accommode du mixte techno
 
 ## Un retour sur l'API
 
-- discours sur le formatage de l'Api qui ne permet pas de plugger directement dessus : retour critique sur la structuration technique du projet // le travail collaboratif et la réunion d'expertises diverses et externes sur le projet permet de souligner ses faiblesses, de renouer avec des choix d'implémentations fait au début de la conception technique et ainsi de davantage délimiter le projet en tant qu'objet technique = le projet 4 alimente/enrichie/actualise le projet AG / donc le hackathon n'est pas juste un moment ludique d'extension d'un projet global, c'est une occasion de dialogue critique avec un objet culturel
-  - RESTfullness ???
-  - interoperabilité de AG
-  - suitable data format
-  - travailler *en local* vs appeler une API
+> - discours sur le formatage de l'Api qui ne permet pas de plugger directement dessus : retour critique sur la structuration technique du projet // le travail collaboratif et la réunion d'expertises diverses et externes sur le projet permet de souligner ses faiblesses, de renouer avec des choix d'implémentations fait au début de la conception technique et ainsi de davantage délimiter le projet en tant qu'objet technique = le projet 4 alimente/enrichie/actualise le projet AG / donc le hackathon n'est pas juste un moment ludique d'extension d'un projet global, c'est une occasion de dialogue critique avec un objet culturel
+> - RESTfullness ???
+> - interoperabilité de AG
+> - suitable data format
+
+L'api est simple a naviger avec son endpoint `/api` qui n'a rien anous cacher.
+Parcontre certain endpoints semblent redondant voir inutiles car on pourrait seulement utilisé `/api/passages/` pour accéder.
+
+1. Par exemple le endpoint `/api/book` ne semble pas avoir d'intérêt, on pourrait penser il nous permettrait d'accéder aux épigrams d'un livre. Mais au final on s'apercoit que les livres ne sont que un parametres de filtres pour les epigrams `api/passages/?book__number=1`.
+
+1. La navigabilité est certes accrue mais souvent cela donne beaucoup de redondance grace au URL retourné dans chaque objet et attribué. Mais il n'est peut-être pas necessaire de dupliquer un sous-resources à l'intérieur d'un resource
+1. Certes on va miniser les calls à l'API drastiquement mais l'un des buts d'une API restfull est de concevoir l'API de manière à permettre aux clients de spécifier les données qu'ils souhaitent récupérer, afin d'éviter le transfert d'informations inutiles. On pourrez envisager de fournir une option pour récupérer toutes les sous-ressources de maniére optionnel mais si on envoit leut id c'est ptet pas necessaire.
+1. Accessibilité aux sous-ressources doit êter rapide mais l'objectif est de permettre aux clients d'accéder rapidement aux données dont ils ont besoin sans avoir à récupérer des informations supplémentaires non pertinentes.
+
+### dupliquer un sous-resources à l'intérieur d'un resource
+
+```txt
+GET /api/keywords/116/
+```
+
+```json
+{
+    "id": 116,
+    "url": "https://anthologiagraeca.org/api/keywords/116/",
+    "category": {
+        "url": "https://anthologiagraeca.org/api/keyword_categories/4/",
+        "names": [
+            {
+                "name": "Époques",
+                "language": "fra"
+            },
+            {
+                "name": "Periods",
+                "language": "eng"
+            },
+            {
+                "name": "Tempora",
+                "language": "lat"
+            },
+            {
+                "name": "Periodi",
+                "language": "ita"
+            },
+            {
+                "name": "Épocas",
+                "language": "por"
+            }
+        ]
+    },
+    "names": [
+        {
+            "name": "époque byzantine",
+            "language": "fra"
+        },
+        {
+            "name": "epoca bizzantina",
+            "language": "ita"
+        }
+    ],
+...
+}
+
+```
+
+```txt
+GET /api/keyword_categories/4/
+```
+
+```json
+{
+    "url": "https://anthologiagraeca.org/api/keyword_categories/4/",
+    "names": [
+        {
+            "name": "Époques",
+            "language": "fra"
+        },
+        {
+            "name": "Periods",
+            "language": "eng"
+        },
+        {
+            "name": "Tempora",
+            "language": "lat"
+        },
+        {
+            "name": "Periodi",
+            "language": "ita"
+        },
+        {
+            "name": "Épocas",
+            "language": "por"
+        }
+    ]
+}
+```
+
+### Proposition
+
+```txt
+GET /api/passages/{epigram_id}?include=texts,authors,comments
+```
+
+Utilisez le paramètre include pour spécifier les sous-ressources que vous souhaitez inclure dans la réponse, ici les sous-ressources "texts", "authors" et "comments" de l'épigramme.
+
+Et bien sur:
+
+```txt
+GET /api/passages/{epigram_id}?include=all
+```
+
+serait equivalent a:
+
+```txt
+GET /api/passages/{epigram_id}
+```
 
 ## détermination du projet par les profils techniques
 
