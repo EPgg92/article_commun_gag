@@ -1,0 +1,45 @@
+---
+abstract:
+  - lang: fr
+    text_f: |-
+      Un résumé. 
+articleslies:
+  - auteur: ''
+    titre: ''
+    url: ''
+authors:
+  - affiliations: Udem
+    email: a@a.net
+    forname: Antoine
+    orcid: '12'
+    surname: Fauchié
+  - forname: Enzo
+    surname: 
+  - forname: Lena
+  - forname: Margot
+  - forname: Marianne
+director:
+  - foaf: ''
+    forname: ''
+    gender: ''
+    isni: ''
+    orcid: ''
+    surname: ''
+    viaf: ''
+dossier:
+  - id: ''
+    title_f: ''
+lang: fr
+link-citations: true
+nocite: '@*'
+rights: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+subtitle_f: Sub
+title_f: Titre
+translations:
+  - lang: ''
+    titre: ''
+    url: ''
+translator:
+  - forname: ''
+    surname: ''
+---
