@@ -25,7 +25,7 @@ En revanche, l'accès à certaines données de l'API peuvent être obtenues dire
 
 1. Par exemple, le endpoint `/api/book` n'a en tant que tel pas été utilisé dans le cadre du projet du groupe pour accèder aux épigrammes d'un livre. Il s'est avéré, dans le travail de restructuration de l'API, que cet endpoint relevait davantage d'un filtre pour trier les épigrammes : `api/passages/?book_number=1` donne les épigrammes du livre 1.
 
-1. La navigabilité est certes accrue mais souvent cela donne beaucoup de redondance grace au URL retourné dans chaque objet et attribué. Mais il n'est peut-être pas necessaire de dupliquer un sous-resources à l'intérieur d'un resource
+1. Si la navigation dans les données de l'API s'en trouve accrue, il demeure une redondance de par le fonctionnement des URL retournées et attribuées dans chaque objet. Mais il n'est peut-être pas necessaire de dupliquer un sous-resources à l'intérieur d'un resource.
 1. Certes on va miniser les calls à l'API drastiquement mais l'un des buts d'une API restfull est de concevoir l'API de manière à permettre aux clients de spécifier les données qu'ils souhaitent récupérer, afin d'éviter le transfert d'informations inutiles. On pourrez envisager de fournir une option pour récupérer toutes les sous-ressources de maniére optionnel mais si on envoit leut id c'est ptet pas necessaire.
 1. Accessibilité aux sous-ressources doit êter rapide mais l'objectif est de permettre aux clients d'accéder rapidement aux données dont ils ont besoin sans avoir à récupérer des informations supplémentaires non pertinentes.
 
