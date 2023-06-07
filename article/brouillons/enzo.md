@@ -20,7 +20,7 @@ Les décisions prises par le groupe se justifient pour correspondre aux différe
 > - interoperabilité de AG
 > - suitable data format
 
-L'api est simple a naviger avec son endpoint `/api` qui n'a rien anous cacher.
+Par la clarté de sa structure, l'API est simple de navigation à partir de son endpoint `/api`.
 Parcontre certain endpoints semblent redondant voir inutiles car on pourrait seulement utilisé `/api/passages/` pour accéder.
 
 1. Par exemple le endpoint `/api/book` ne semble pas avoir d'intérêt, on pourrait penser il nous permettrait d'accéder aux épigrams d'un livre. Mais au final on s'apercoit que les livres ne sont que un parametres de filtres pour les epigrams `api/passages/?book__number=1`.
