@@ -21,7 +21,7 @@ Les décisions prises par le groupe se justifient pour correspondre aux différe
 > - suitable data format
 
 Par la clarté de sa structure, l'API est simple de navigation à partir de son endpoint `/api`.
-Parcontre certain endpoints semblent redondant voir inutiles car on pourrait seulement utilisé `/api/passages/` pour accéder.
+En revanche, l'accès à certaines données de l'API peuvent être obtenues directement par `/api/passages/` sans passer par les endpoints proposés et qui s'avèrent ainsi redondants.
 
 1. Par exemple le endpoint `/api/book` ne semble pas avoir d'intérêt, on pourrait penser il nous permettrait d'accéder aux épigrams d'un livre. Mais au final on s'apercoit que les livres ne sont que un parametres de filtres pour les epigrams `api/passages/?book__number=1`.
 
