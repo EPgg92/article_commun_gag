@@ -8,9 +8,10 @@
   
 ### Possibilités 👀 Margot
 
-Nous avons envisagé de faire seulement un frontend pour render les different plots comme le montre ce [notebook observable HQ](https://observablehq.com/d/7de89004c95e1067?collection=@lenamk/hackathon-navigations); cependant le mixte technologique de notre groupe nous a fait partir sur une extraction et une tranformation en python. Nous condamnent a devoir faire des updates de cette sources of truth (mais qui ne devrait pas posé de problème sachant que lanthologie est un corpus fini).
-Cependant il serait tout a fait possible de réaliser ce nous avons fait en full python ou javascript. (dans un observable notebook with d3 ou jupyter notebook avec d3graph ou self encapsuled sans un site).
-Les décisions ont été fait  pour que tout le mode s'accommode du mixte technologique et puisse être plus à l'aise et rapide (tout en s'amusant).
+Nous avions envisagé dans un premier temps procéder uniquement à un frontend pour render visibles les different plots (comme montré dans ce [notebook observable HQ](https://observablehq.com/d/7de89004c95e1067?collection=@lenamk/hackathon-navigations)); cependant la diversité technologique de notre groupe nous a réorienté vers une extraction et une tranformation en python.
+Obligés à faire des updates de cette sources of truth (mais qui ne devrait pas posé de problème sachant que lanthologie est un corpus fini).
+Cependant il reste possible de réaliser ce nous avons fait en full python ou javascript (dans un observable notebook with d3 ou jupyter notebook avec d3graph ou self encapsuled sans un site).
+Les décisions prises par le groupe se justifient pour correspondre aux différents profils techniques du groupe, afin que chacun des membres puisse être plus à l'aise et efficace dans chacune de leurs tâches (tout en s'amusant).
 
 ## Un retour sur l'API
 
