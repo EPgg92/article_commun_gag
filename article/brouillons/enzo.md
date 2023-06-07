@@ -146,7 +146,103 @@ GET /api/passages/{epigram_id}
 
 ## La dynamique synergique de l'équipe 4
 
-- la dynamique synergique qui s'est concrètement mise en place autour de la table de travail (photos à l'appui) qui a placé chacun dans un environnement technique choisi qu'il maîtrise tout en permettant les dialogues entre les différents lieux d'intervention et en gardant le fil rouge des visualisations prévues et visées pour conserver une cohérence de travail. (margot : je vais refaire un schéma de la table) - en parvenant à faire communiquer, à s'articuler en un commun
+La dynamique synergique qui s'est concrètement mise en place autour de la table de travail (photos à l'appui) qui a placé chacun dans un environnement technique choisi qu'il maîtrise tout en permettant les dialogues entre les différents lieux d'intervention et en gardant le fil rouge des visualisations prévues et visées pour conserver une cohérence de travail. (margot : je vais refaire un schéma de la table) - en parvenant à faire communiquer, à s'articuler en un commun.
+Une fois atablé, on peut décrire 4 sous-groupes principaux qui ont collaboré et changé pendant que les heures défilaient.
+Trés vite dés le début, le premier sous-groupes, des pythonnistes, apparut!
+Aprés avoir lu la doc afin d'extraire le data comme cela était recommendé.
+Ce sous-groupe de 2 (Marianne et Enzo) se décrivit alors comme le backend car principalement souhaitant extraire et transformer la donnée. [dumpall](https://github.com/EPgg92/2022-Hackathon-Navigations/blob/Team4/Team4/dumpall.py)
+La notion de contrat émergeait alors et l'idée d'une équipe frontend devenait évidente!
+En effet, s'il y avait de la donnée a traité il fallait un format a définir et une sémantique commune à établir.
+Et s'il y avait un backend c'était pour communiqué de l'information a un frontend.
+Lena pris donc en charge une premiére exploration des visuialization possible et dynamiques de observable.
+Créant ainsi le sous-groupe qui sera appelé frontend pour le reste du hackathon.
+Margot la rejoindra pour faire des tests sur les notebook de noeud et d'arc qui formeront plus tard notre première visualisation.
+Mais alors que l'effervesence battait son plein l'inquiétude du délivrable dans un temps aussi cours se fut resentir
+Il était temps que le troisiéme sous groupe apparaisse: le produit.
+Margot, Lena et Antoine, délaissé par les pythoneux en train de faire un 4 mains pour entre jupyter et des inscryption de shebang dans les scripts, se posait alors des questions de timeline revoyant à la baisse les expectations juste discuté avant que tout le mond s'assoient!
+"AI pas le temps trop compliqué et notre backend a déjà du mal a démarré" laisse sous-entendre notre cerbère inquiet.
+Des relations entre épigrames "oui" mais seulement si l'on utilise sur des features déjà existantes!
+Simple pensai(en)t-il(s), le découpage par livre allait donné une premiére dimension a notre représentation.
+Mais quel serait l'articulation ?
+Les keywords contenus dans les epigrames.
+"Comment on les représenteras ce n'est pas la question pour l'instant" soupira le molosse qui se séparait déjà en quête de papier de !
+L'important était de répondre un contrat a l'intrensigeance du backend qui cherchait dans l'API les premières brides d'information.
+Maintenant ils savaient quoi chercher et demandaient alors la paix.
+Chaque livre devrait être ainsi représenté par le backend
+
+```py
+{
+  "nb_epi": 0, # nombre d'épigrame par livre
+  "list_id_epi": [], # la liste des ids des épigrams
+  "nb_kw": 0, # nombre de keyword l'intérieur des épigrame du dit livre livre
+  "list_id_kw": [], # la liste des keywords (qui s'avera etre la liste des URL des KW)
+  "name": 'undefined', # Le nom du livre 
+  "number": 0, # le numéro du livre
+  "url": '', # l'url du livre
+}
+```
+
+Maintenant le backend est occupé, la tâche consitait a trouver un entendement entre les différents cerveau composant le canidé se regroupant sur une feuille de papier avec 3 stylos.
+Les ronds et arcs apparurent quasi directement!
+Cependant qui étaient quoi ? Margot habitué à GTR proposat de symboliser les noeuds par les livres.
+Antoine (ou quelqu'un d'autre) retorquait que l'on ne pouvait pas ajouter des un arc par mots clés ca serait trop fourni et incompréhensible.
+Les ardeurs d'illisibilité de Margot calmer; on revenait a se demander comment representer les keywords part des arcs.
+Lena ajouta que les capacités du frontend choisit permettait de faire plus qu'un simple graph de noeud et d'arc.
+En effet elle indiqua que non seulement elle avait accès à de la colorimétrie varié mais aussi que les arcs et les noeuds eux-mêmes pouvait porter des attributs visibles.
+L´épaisseurs des arcs et la largeurs des noeud serait alors le nombre de keyword.
+La couleur pas sûr pour le moment mais certainement utile pour différencier les livres.
+Les enfants de méduse en accord avec le plan tout le monde se re-assis et on se lança dans l'implémentation des différentes idées.
+Des notes hérissons émergérent et des channels divers (whatsapp, discord, github) s'ouvraient pour faciliter le partage de idée et des fichiers.
+Les deux premiéres heures filaient des propositions de'utilisation de d3 only fur proposé mais les enfants de méduses déjà emporter par le projet prometait une data beaucoup plus simple a loader au lieu de ddos l'api á chaque fois que l'on fait un graph ...
+L'heure des victuailles sonnait que la pression se faisait déjà sentir dans le groupes.
+Les serpents sensibles au vibrations laissaient le brouhaha des cerveaux de tout les groupes descendre se rasasier!
+Mais l'appel du ventre se faisant resentir ils descendairent aussi pour continuer leur 4 mains mais de la même maniére se repétant de pizza froide et de calme.
+
+dans le procahain épisode
+
+- Succeed to share data
+- Cerberes crée view2 pendant absence
+- new contract
+<https://github.com/EPgg92/2022-Hackathon-Navigations/commit/8250a783cbf0fa4ae3ff171c609191daf689d48e>
+
+```json
+{
+    "view1": {
+        "node_book": [
+            {
+                "name": "1",
+                "nb_epi": 0,
+                "list_id_epi": [
+                    123
+                ],
+                "nb_kw": 0,
+                "list_id_kw": []
+            }
+        ],
+        "edge_keyword": {}
+    },
+    "view2": {
+        "books": [
+            {
+                "name": "12",
+                "map_kw": [
+                    {
+                        "name": "",
+                        "caterory": "",
+                        "list_epi": [
+                            {
+                                "name": "",
+                                "id": "",
+                                "url": ""
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}
+```
 
 ---
 
