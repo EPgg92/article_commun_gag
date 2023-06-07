@@ -146,29 +146,26 @@ GET /api/passages/{epigram_id}
 
 ## La dynamique synergique de l'équipe 4
 
-La dynamique synergique qui s'est concrètement mise en place autour de la table de travail (photos à l'appui) qui a placé chacun dans un environnement technique choisi qu'il maîtrise tout en permettant les dialogues entre les différents lieux d'intervention et en gardant le fil rouge des visualisations prévues et visées pour conserver une cohérence de travail. (margot : je vais refaire un schéma de la table) - en parvenant à faire communiquer, à s'articuler en un commun.
-Une fois atablé, on peut décrire 4 sous-groupes principaux qui ont collaboré et changé pendant que les heures défilaient.
-Trés vite dés le début, le premier sous-groupes, des pythonnistes, apparut!
-Aprés avoir lu la doc afin d'extraire le data comme cela était recommendé.
-Ce sous-groupe de 2 (Marianne et Enzo) se décrivit alors comme le backend car principalement souhaitant extraire et transformer la donnée. [dumpall](https://github.com/EPgg92/2022-Hackathon-Navigations/blob/Team4/Team4/dumpall.py)
-La notion de contrat émergeait alors et l'idée d'une équipe frontend devenait évidente!
-En effet, s'il y avait de la donnée a traité il fallait un format a définir et une sémantique commune à établir.
-Et s'il y avait un backend c'était pour communiqué de l'information a un frontend.
-Lena pris donc en charge une premiére exploration des visuialization possible et dynamiques de observable.
-Créant ainsi le sous-groupe qui sera appelé frontend pour le reste du hackathon.
-Margot la rejoindra pour faire des tests sur les notebook de noeud et d'arc qui formeront plus tard notre première visualisation.
-Mais alors que l'effervesence battait son plein l'inquiétude du délivrable dans un temps aussi cours se fut resentir
-Il était temps que le troisiéme sous groupe apparaisse: le produit.
-Margot, Lena et Antoine, délaissé par les pythoneux en train de faire un 4 mains pour entre jupyter et des inscryption de shebang dans les scripts, se posait alors des questions de timeline revoyant à la baisse les expectations juste discuté avant que tout le mond s'assoient!
+Une dynamique synergique s'est concrètement mise en place autour de la table de travail (photos à l'appui), et a permis de placer chacun dans un environnement technique choisi  et maîtrisé. Cette disposition a engendré des dialogues entre les différents lieux d'intervention, tout en suivant le fil rouge des visualisations envisagées pour conserver une cohérence de travail [margot : je vais refaire un schéma de la table] — en parvenant à faire communiquer chaque personne et à faire dialogue chaque initiative, et ainsi former un commun.
+Une fois attablée, la collaboration et les échanges se sont 'équipe s'est divisée en quatre sous-groupes, ouvrant  qui ont collaboré et changé pendant que les heures défilaient.
+Dés le début, le premier sous-groupe, des pythonnistes, apparut !
+Aprés avoir lu la documentation, notamment pour réaliser les tâches d'extraction des données comme cela était recommandé, ce sous-groupe composé de Marianne et d'Enzo se décrit alors comme le _backend_.
+En effet leur tâche est principalement d'extraire et de transformer les données (voir ce jeu de données [dumpall](https://github.com/EPgg92/2022-Hackathon-Navigations/blob/Team4/Team4/dumpall.py)).
+Une notion importante a émergé au moment de cette opération : le fait qu'une forme de contrat est nécessaire, ce contrat se traduisant par un traitement puis un affichage de ces données, notamment par une autre opération : une sémantique commune à définir.
+Après le _backend_, c'est donc un _frontend_ qu'il faut mettre en place, il s'agit concrètement de réaliser des visualisations pour pouvoir observer des dynamiques.
+Ce sous-groupe, ainsi nommé _frontend_, est initié par Lena sur la génération de visualisations, rejointe par Margot sur la manipulation des données dans des _notebooks_ — sorte de bacs à sable pour prototyper.
+Alors que l'effervescence bat son plein, l'inquiétude concernant un livrable réalisé dans un temps aussi cours se fait ressentir.
+Il est alors temps que le troisième sous-groupe apparaisse : le produit.
+Margot, Lena et Antoine, délaissés par les _pythoneux_ concentrés sur des problèmes de restructuration des données (avec des Jupyter Notebooks, des inscriptions de shebang et des scripts [à préciser par @enzo]), se posent des questions de _timeline_ pour représenter les données, revoyant à la baisse les objectifs initialement formulés.
 "AI pas le temps trop compliqué et notre backend a déjà du mal a démarré" laisse sous-entendre notre cerbère inquiet.
-Des relations entre épigrames "oui" mais seulement si l'on utilise sur des features déjà existantes!
-Simple pensai(en)t-il(s), le découpage par livre allait donné une premiére dimension a notre représentation.
-Mais quel serait l'articulation ?
-Les keywords contenus dans les epigrames.
-"Comment on les représenteras ce n'est pas la question pour l'instant" soupira le molosse qui se séparait déjà en quête de papier de !
-L'important était de répondre un contrat a l'intrensigeance du backend qui cherchait dans l'API les premières brides d'information.
-Maintenant ils savaient quoi chercher et demandaient alors la paix.
-Chaque livre devrait être ainsi représenté par le backend
+L'enjeu de montrer des relations entre des épigrammes n'est envisageable qu'en faisant usage de fonctionnalités déjà existantes dans la structuration des données dans l'Anthologie Grecque !
+Simple pensai(en)t-il(s), le découpage par livre peut donner une première dimension a notre représentation.
+Mais quel alors le lien avec les épigrammes, ce qui permet de les lier _entre_ les livres ?
+Les mots-clés (_keywords_) contenus dans les epigrammes.
+"Comment représenterons-nous ces données n'est pas la question pour l'instant" soupire le molosse qui se sépare déjà du groupe en quête de papier ! [précisions de @enzo nécessaires]
+L'important est de répondre au contrat quand à l'intransigeance du _backend_ qui cherche d'abord dans l'API les premières brides d'information.
+Désormais ils savent quoi chercher et demande alors la paix.
+Chaque livre devrait être ainsi représenté par le backend [@antoine : ça y est je suis largué…]
 
 ```py
 {
@@ -182,21 +179,22 @@ Chaque livre devrait être ainsi représenté par le backend
 }
 ```
 
-Maintenant le backend est occupé, la tâche consitait a trouver un entendement entre les différents cerveau composant le canidé se regroupant sur une feuille de papier avec 3 stylos.
-Les ronds et arcs apparurent quasi directement!
-Cependant qui étaient quoi ? Margot habitué à GTR proposat de symboliser les noeuds par les livres.
-Antoine (ou quelqu'un d'autre) retorquait que l'on ne pouvait pas ajouter des un arc par mots clés ca serait trop fourni et incompréhensible.
-Les ardeurs d'illisibilité de Margot calmer; on revenait a se demander comment representer les keywords part des arcs.
-Lena ajouta que les capacités du frontend choisit permettait de faire plus qu'un simple graph de noeud et d'arc.
-En effet elle indiqua que non seulement elle avait accès à de la colorimétrie varié mais aussi que les arcs et les noeuds eux-mêmes pouvait porter des attributs visibles.
-L´épaisseurs des arcs et la largeurs des noeud serait alors le nombre de keyword.
-La couleur pas sûr pour le moment mais certainement utile pour différencier les livres.
-Les enfants de méduse en accord avec le plan tout le monde se re-assis et on se lança dans l'implémentation des différentes idées.
-Des notes hérissons émergérent et des channels divers (whatsapp, discord, github) s'ouvraient pour faciliter le partage de idée et des fichiers.
-Les deux premiéres heures filaient des propositions de'utilisation de d3 only fur proposé mais les enfants de méduses déjà emporter par le projet prometait une data beaucoup plus simple a loader au lieu de ddos l'api á chaque fois que l'on fait un graph ...
-L'heure des victuailles sonnait que la pression se faisait déjà sentir dans le groupes.
-Les serpents sensibles au vibrations laissaient le brouhaha des cerveaux de tout les groupes descendre se rasasier!
-Mais l'appel du ventre se faisant resentir ils descendairent aussi pour continuer leur 4 mains mais de la même maniére se repétant de pizza froide et de calme.
+Maintenant que le sous-groupe _backend_ est occupé, la tâche des autres personnes est de trouver un accord entre les différents cerveaux, et le dessin de visualisations à trois stylos sur du papier est un bon moyen d'avancer sur ce point.
+Les ronds et arcs apparaissent quasi directement !
+Mais comment identifier les différents éléments de ces schémas de ces esquisses ?
+Pour Margot, chaque nœud est un livre
+Antoine (ou quelqu'un d'autre) rétorque que l'on ne peut pas ajouter des arcs pour chacun des mots-clés, cela serait trop fourni et incompréhensible.
+Les ardeurs d'illisibilité de Margot raisonnées, nous nous demandons donc comment représenter les mots-clés part des arcs.
+Lena ajoute que les capacités du _frontend_ choisit permettent de faire plus qu'un simple graphique de nœuds et d'arcs.
+En effet elle indique que non seulement elle a accès à de une colorimétrie variée mais aussi que les arcs et les nœuds eux-mêmes peuvent porter des attributs visibles.
+L'épaisseur des arcs et la largeur des nœuds représente alors le nombre de _keywords_.
+Si la couleur est indéterminée pour le moment, elle sera certainement utile pour différencier les livres.
+Les enfants de méduse sont en accord avec le plan, tous le monde se rassoit, et nous nous lançons dans l'implémentation des différentes idées.
+Des _notes hérissons_ émergent (des _pads_) ainsi que des _chaînes_ diverses (Whatsapp, Discord, GitHub) afin de faciliter le partage des idées, et de leur formalisation sous forme de fichiers.
+Les deux premières heures filent, des propositions d'utilisation de d3 only sont proposées, mais les enfants de méduses sont déjà emportés par le projet, et promettent une data beaucoup plus simple a loader au lieu de ddos l'api á chaque fois que l'on fait un graph ...
+L'heure des victuailles sonne que la pression se fait déjà sentir dans le groupe.
+Les serpents sensibles au vibrations laissent le brouhaha des cerveaux de tout les groupes descendre se rassasier !
+Ils descendent aussi pour continuer leur quatre mains mais de la même manière se répétant de pizza froide et de calme.
 
 dans le procahain épisode
 
