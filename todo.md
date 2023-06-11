@@ -17,17 +17,20 @@ Laissez savoir les autres s'il doivent faire quelques choses pour vous aider en 
 
 ### Antoine 🦄
 
-- [ ] from 🐏: Help Enzo to create a single source publishing pipeline html & pdf in github
-  - maybe unecessary if we use _stylo editor_ 🤔
+- [ ] from 🐏: ~~Help Enzo to create a single source publishing pipeline html & pdf in github~~
+  - ~~maybe unecessary if we use _stylo editor_ 🤔~~
   -  🦊 je crois que ce n'est pas nécessaire en effet, ils ont un pipeline SP à ma connaissance
-- [ ] from :fox_face: : aurais-tu des suggestions sur quoi préciser ou retravailler dans l'encadré sur les notebooks?
+- [ ] from 🦊: aurais-tu des suggestions sur quoi préciser ou retravailler dans l'encadré sur les notebooks?
 
 ### Enzo 🐏
 
 - [ ] étoffer parti et discours sur l'extraction
 - [ ] Expliquer en quoi l'API est atypique
   -  🦊 j'ai commencé à mettre des commentaires sur l'API dans l'encadré, tu iras voir ce qui te convient ou pas et ce que tu voudrais ajouter
+  -  [ ] rework so ideas of navigations is more present and not techy nerd (suis le fil rouge de l'article Enzo)
 - [ ] deroulement du projet : paragraphe sur le découplage des spécialités et de l'organisation horizontal
+  - [x] started until pizza and first dump
+  - [ ] 🦄 review and augmente it 
 - [ ] _your todo item_
 
 ### Lena 🦊 
@@ -40,8 +43,8 @@ Laissez savoir les autres s'il doivent faire quelques choses pour vous aider en 
 
 ### Margot 🐈
 
-- [ ] __later__ from 🐏: help Enzo to reformulate his messy paragraphs!
+- [x] __later__ from 🐏: help Enzo to reformulate his messy paragraphs!
 
-- [ ] from :fox_face: : aurais-tu des suggestions sur quoi préciser ou retravailler dans l'encadré sur la visualisation de données?
-
-  
+- [ ] from 🦊: aurais-tu des suggestions sur quoi préciser ou retravailler dans l'encadré sur la visualisation de données?
+- [ ] from 🦄🐏🐈 : Write a part about graph and diagrams !
+- [ ] from 🦄🐏🐈 : Write a short part to conclude the article !
