@@ -21,13 +21,30 @@
 hypothèses Lena:
 
 - on a fait constat de l'inefficacité à traiter les données dans le notebook et on a opté pour un traitement en python avec Enzo et Marianne
+
 - ça laisse du temps pour réfléchir aux visualisations, et force à se poser la question: quelles sont les données dont on a besoin, quel format, etc.
 
 - 10:28 [fork de Arc Diagram](https://observablehq.com/d/82b5ad461a19ff28@38?collection=@lenamk/hackathon-navigations)
+
 - 10:35 [fork de Paul's Observable Tips&Tricks](https://observablehq.com/d/a24368583ec29336@421?collection=@lenamk/hackathon-navigations)
+
 - 10:39 [fork du Graph STAR WARS](https://observablehq.com/d/9b6f8db3472d31ba?collection=@lenamk/hackathon-navigations)
   - ~11h: expérimentation pour comprendre le format des données
+
 - 11:54 : 1er commit sur github
 
-- 1:57 fork du graph STAR WARS pour créer [Graph des livres (1)](https://observablehq.com/d/04bf8f802c358028?collection=@lenamk/hackathon-navigations)
+- 13:45 essais avec la viz des mot-clefs sur le livre 5 avec un format test (et très random) de données
+
+- 13:57 fork du graph STAR WARS pour créer [Graph des livres (1)](https://observablehq.com/d/04bf8f802c358028?collection=@lenamk/hackathon-navigations)
+
   - 14:04 ajout du lien vers les données produites par le groupe
+
+- 14:02 Graph des livres (1) première modification de data → jusqu'à 15h37 
+
+  > gap de 10 min → hypothpse: retour au dessin dû au doute sur ce qu'on voulait représenter
+
+- 15:42: data pour livre5!
+
+- 15:46: fork pour créer graph des livres (2) → jusqu'à 16h environ
+
+- 16h à 16h27: livre 5 variations
